@@ -1,5 +1,7 @@
 from pathlib import Path
-content='''/**
+
+content = r'''/**
+ * Human_Capability_Hub
  * File 10 - js/layout.js
  */
 window.initLayout=function(){
