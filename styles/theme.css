@@ -1,0 +1,35 @@
+/* SESAMIND theme.css */
+html[data-theme="dark"]{
+color-scheme:dark;
+}
+html[data-theme="light"]{
+color-scheme:light;
+}
+body{
+background:var(--bg-page);
+color:var(--text-primary);
+transition:background var(--transition-normal),color var(--transition-normal);
+}
+.topbar,.sidebar,.toc,.card{
+background:var(--bg-surface);
+}
+.top-navigation a{
+color:var(--text-secondary);
+padding:.5rem .75rem;
+border-radius:var(--radius-sm);
+}
+.top-navigation a:hover{
+background:var(--bg-surface-hover);
+color:var(--text-primary);
+}
+#theme-toggle{
+padding:.5rem;
+border-radius:50%;
+}
+#theme-toggle:hover{
+background:var(--bg-surface-hover);
+}
+::selection{
+background:var(--brand-primary);
+color:#fff;
+}

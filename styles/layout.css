@@ -1,0 +1,51 @@
+/* SESAMIND layout.css */
+.topbar{
+position:sticky;top:0;z-index:var(--z-header);
+height:var(--topbar-height);
+display:flex;align-items:center;justify-content:space-between;
+padding:0 var(--space-6);
+background:var(--bg-surface);
+border-bottom:1px solid var(--border-color);
+}
+.brand{display:flex;flex-direction:column}
+.brand-name{font-family:var(--font-heading);font-size:2rem}
+.brand-tagline{font-size:var(--fs-sm);color:var(--text-muted)}
+.app-layout{
+display:grid;
+grid-template-columns:var(--sidebar-width) minmax(0,var(--content-width)) var(--toc-width);
+gap:var(--space-6);
+max-width:1600px;
+margin:0 auto;
+padding:var(--space-6);
+}
+.sidebar,.toc{
+position:sticky;
+top:calc(var(--topbar-height) + var(--space-4));
+align-self:start;
+height:calc(100vh - var(--topbar-height) - 2rem);
+overflow:auto;
+}
+main#content{min-width:0}
+.hero{padding:var(--space-8) 0}
+.card-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:var(--space-5);
+}
+footer{
+display:flex;
+justify-content:space-between;
+padding:var(--space-5) var(--space-6);
+border-top:1px solid var(--border-color);
+color:var(--text-muted);
+}
+@media (max-width:1200px){
+.app-layout{grid-template-columns:240px 1fr}
+.toc{display:none}
+}
+@media (max-width:768px){
+.topbar{padding:0 var(--space-4)}
+.app-layout{grid-template-columns:1fr;padding:var(--space-4)}
+.sidebar,.toc{display:none}
+footer{flex-direction:column;gap:var(--space-2)}
+}

@@ -1,0 +1,46 @@
+/* SESAMIND print.css */
+@media print{
+@page{
+size:A4;
+margin:18mm;
+}
+html,body{
+background:#fff !important;
+color:#000 !important;
+}
+.topbar,
+.sidebar,
+.toc,
+footer,
+.hero-actions,
+#theme-toggle{
+display:none !important;
+}
+.app-layout{
+display:block !important;
+max-width:100%;
+padding:0;
+margin:0;
+}
+main#content{
+width:100%;
+}
+.card{
+border:1px solid #ccc;
+break-inside:avoid;
+page-break-inside:avoid;
+background:#fff !important;
+}
+a{
+color:#000;
+text-decoration:none;
+}
+pre,blockquote,table,img{
+break-inside:avoid;
+page-break-inside:avoid;
+}
+h1,h2,h3,h4{
+break-after:avoid;
+page-break-after:avoid;
+}
+}
