@@ -1,0 +1,49 @@
+/*
+ * SESAMIND Release 1.0
+ * File 02 - styles/variables.css
+ */
+
+:root{
+  /* Colors */
+  --color-bg:#0b0f14;
+  --color-surface:#121821;
+  --color-surface-2:#1b2430;
+  --color-border:#252e39;
+
+  --color-primary:#4f8cff;
+  --color-primary-hover:#6aa0ff;
+
+  --color-text:#f5f7fa;
+  --color-text-muted:#94a3b8;
+
+  --color-success:#22c55e;
+  --color-warning:#f59e0b;
+  --color-danger:#ef4444;
+
+  /* Typography */
+  --font-heading:"Instrument Serif",serif;
+  --font-body:"Inter",sans-serif;
+  --font-code:"JetBrains Mono",monospace;
+
+  /* Spacing */
+  --space-1:4px;
+  --space-2:8px;
+  --space-3:12px;
+  --space-4:16px;
+  --space-5:24px;
+  --space-6:32px;
+  --space-7:48px;
+  --space-8:64px;
+
+  /* Radius */
+  --radius-sm:8px;
+  --radius-md:12px;
+  --radius-lg:18px;
+
+  /* Shadow */
+  --shadow-md:0 10px 30px rgba(0,0,0,.25);
+
+  /* Layout */
+  --container:1280px;
+  --transition:220ms ease;
+}
