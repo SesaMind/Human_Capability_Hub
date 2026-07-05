@@ -1,0 +1,14 @@
+from pathlib import Path
+import json
+
+site={
+  "name":"Human_Capability_Hub",
+  "tagline":"Human Capability Knowledge System",
+  "language":"en",
+  "theme":"dark",
+  "repository":"",
+  "version":"1.0.0"
+}
+path="/mnt/data/site.json"
+Path(path).write_text(json.dumps(site,indent=2),encoding="utf-8")
+print(path)
